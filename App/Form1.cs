@@ -16,5 +16,18 @@ namespace App
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textUserName.Text=="Admin" && textPw.Text == "Admin")
+            {
+                UserAccount account = new UserAccount();
+                account.Show();
+            }
+            else
+            {
+                MessageBox.Show("mdp incorrect");
+            }
+        }
     }
 }
